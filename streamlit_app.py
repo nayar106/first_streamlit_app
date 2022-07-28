@@ -43,7 +43,7 @@ except URLError as e:
 #fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 #streamlit.dataframe(fruityvice_normalized)
 #streamlit.stop()
-streamlit.header("View our fruit list-Add your favorits!)
+streamlit.header("View our fruit list-Add your favorits!")
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
          my_cur.execute("SELECT * from fruit_load_list")
